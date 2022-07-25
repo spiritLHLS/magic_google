@@ -20,7 +20,7 @@ def get_logger(name="magic_google"):
     logging_format += "%(message)s"
 
     logging.basicConfig(
-        format=logging_format, level=logging.INFO, datefmt="%Y:%m:%d %H:%M:%S"
+        format=logging_format, level=logging.ERROR, datefmt="%Y:%m:%d %H:%M:%S"
     )
     logging.getLogger("urllib3").setLevel(logging.WARNING)
     logging.getLogger("chardet").setLevel(logging.WARNING)
